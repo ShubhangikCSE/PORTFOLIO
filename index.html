@@ -1,0 +1,78 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Shubhangi Sanjay Kale | Portfolio</title>  
+  <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+  <div class="container">  
+  <!-- Left Sidebar -->  
+  <div class="left-panel">  
+    <div class="profile-pic">  
+      <img src="images/profile.jpg" alt="Shubhangi Kale" />  
+    </div>  <h2>SHUBHANGI SANJAY KALE</h2>  
+<p>FY COMPUTER ENGINEERING<br>MITAOE, PUNE</p>  
+<p class="tagline">TECH PASSIONATE | CONTENT CREATOR | INNOVATOR</p>  
+
+<div class="links">  
+  <p>📧 <a href="mailto:202401040119@mitaoe.ac.in">202401040119@mitaoe.ac.in</a></p>  
+  <p>📱 <a href="tel:9373149042">9373149042</a></p>  
+  <p>🔗 <a href="https://www.linkedin.com/in/shubhangi-kale-12a3b2338" target="_blank">LinkedIn</a></p>  
+  <p>💻 <a href="https://github.com/ShubhangikCSE" target="_blank">GitHub</a></p>  
+  <p>🎯 <a href="https://www.codechef.com/users/kaleshubhangi" target="_blank">CodeChef</a></p>  
+  <p>🧠 <a href="https://leetcode.com/u/shubhangikale29" target="_blank">LeetCode</a></p>  
+</div>  
+
+<div class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">🌙</div>  
+
+<div class="quote">  
+  <p>“Discipline is my superpower.”</p>
+
+  </div>
+
+  </div>  
+  <!-- Right Side Sections -->  
+  <div class="main-content">  <!-- Banner Section -->  
+<div class="banner-section">  
+    
+</div>  
+
+<!-- Horizontal Menu Strip -->  
+<div class="menu-strip">  
+  <button onclick="loadSection('about')">About</button>  
+  <button onclick="loadSection('resume')">Resume</button>  
+  <button onclick="loadSection('education')">Education</button>  
+  <button onclick="loadSection('certificate')">Certificate</button>  
+  <button onclick="loadSection('projects')">Project</button>  
+  <button onclick="loadSection('skills')">Skills</button>  
+  <button onclick="loadSection('languages')">Languages</button>  
+</div>  
+
+<!-- Dynamic Content Section -->  
+<div id="content" class="content-section">  
+  <!-- Default loaded content will go here -->  
+</div>  
+
+<!-- Contact Form -->  
+<div class="contact-form">  
+  <h3>Connect with Me</h3>  
+  <form>  
+    <input type="text" placeholder="Your Name" required>  
+    <input type="email" placeholder="Your Email" required>  
+    <textarea placeholder="Your Message" required></textarea>  
+    <button type="submit">Send</button>  
+  </form>  
+</div>
+
+  </div>    <script src="script.js"></script>    <script>  
+    function toggleTheme() {  
+      document.body.classList.toggle('dark-mode');  
+      const toggleIcon = document.querySelector('.theme-toggle');  
+      toggleIcon.textContent = document.body.classList.contains('dark-mode') ? '☀' : '🌙';  
+    }  
+  </script>    </div>  
+  
+</body>  
+</html>  
